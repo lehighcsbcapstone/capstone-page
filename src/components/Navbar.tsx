@@ -25,7 +25,7 @@ export default function Navbar() {
   }, []);
   const renderMenuTabs = () => {
     return navItems.map((link) => (
-      <Button variant="ghost" size="default" key={link.path} onClick={() => router.push(link.path)}>
+      <Button className="text-white"variant="ghost" size="default" key={link.path} onClick={() => router.push(link.path)}>
         {link.name}
       </Button>
     ));
