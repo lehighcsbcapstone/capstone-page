@@ -32,14 +32,9 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed w-full h-[100px] bg-[#502d0e] flex items-center justify-between px-4 ">
-      <div className="flex flex-col justify-center items-center h-full text-center lg:text-[16px] md:text-[14px] sm:text-[14px]">
-        <div className="flex items-center text-white"> LEHIGH UNIVERISTY </div>
-        <div className="flex items-center text-white"> COMPUTER SCIENCE </div>
-        <div className="flex items-center text-white"> CAPSTONE </div>
-      </div>
+    <header className="absolute top-0 left-0 w-full z-50 bg-transparent flex items-center justify-between px-4 pt-3 ">
       <div className="hidden sm:flex flex-1 justify-end space-x-8">{renderMenuTabs()}</div>
-      <div className="sm:hidden flex items-center">
+      <div className="sm:hidden flex items-center ml-auto">
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
           <DropdownMenuTrigger>
             <TiThMenu size={30} color="white" />

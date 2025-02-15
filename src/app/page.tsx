@@ -8,12 +8,22 @@ export default function Home() {
   console.log("about");
   return (
     <div>
-      <Image src={img} alt={"mountain top campus"} fill={false} />
-      <div className="flex flex-row  px-8 py-6">
-        <div className="">
-          <h1>ABOUT</h1>
-          <br />
-          <p>
+      <div className="relative w-full h-[400px] ">
+        <Image
+          src={img}
+          alt="Mountain top campus"
+          layout="fill"
+          objectFit="cover"
+          className=""
+        />
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="w-1/3 absolute inset-x-0 bottom-4 flex text-white text-5xl ml-6 font-medium ">
+          Lehigh Computer Science Capstone
+        </div>
+      </div>
+        <div className="lg:absolute lg:right-8 lg:top-60 w-full lg:w-1/2 bg-white shadow-lg p-6 rounded-lg border-2 border-yellow-800">
+          <h1 className="text-xl font-bold">ABOUT</h1>
+          <p className="text-gray-700 mt-4">
             Lehigh University&apos;s Computer Science Capstone is a program of
             the Computer Science and Engineering Department. The capstone is a
             requirement for all three of the department&apos;s Bachelor of
@@ -33,11 +43,10 @@ export default function Home() {
             students Lehigh has to offer, while simultaneously contributing to
             their education.
           </p>
-        </div>
-        <div >Call for Proposals</div>
       </div>
-      <div className="pt-4 bg-[#cfab7a]">
-        <h1>PAST PROJECTS</h1>
+      <div className="lg:h-[30rem] bg-[#cfab7a]"/>
+      <div className="pt-6 bg-[#cfab7a]">
+      <h1 className="text-center text-xl font-bold">PAST PROJECTS</h1>
         <div className="py-4 flex justify-center relative w-full">
           <ImageCarousel />
         </div>
