@@ -7,7 +7,7 @@ import { ImageCarousel } from "@/components/ImageCarousel";
 export default function Home() {
   console.log("about");
   return (
-    <div>
+    <div className="bg-[#cfab7a]">
       <div className="relative w-full h-[400px] ">
         <Image
           src={img}
@@ -17,12 +17,12 @@ export default function Home() {
           className=""
         />
         <div className="absolute inset-0 bg-black/40"></div>
-        <div className="w-1/3 absolute inset-x-0 bottom-4 flex text-white text-5xl ml-6 font-medium ">
+        <div className="lg:w-1/4 absolute inset-x-0 bottom-4 flex text-white text-5xl ml-6 font-medium ">
           Lehigh Computer Science Capstone
         </div>
       </div>
-        <div className="lg:absolute lg:right-8 lg:top-60 w-full lg:w-1/2 bg-white shadow-lg p-6 rounded-lg border-2 border-yellow-800">
-          <h1 className="text-xl font-bold">ABOUT</h1>
+        <div className="lg:absolute lg:right-2 lg:top-48 w-full lg:w-2/3 p-4 bg-white shadow-lg  rounded-lg border-2 border-yellow-800">
+          <h1 className="text-l font-bold">ABOUT</h1>
           <p className="text-gray-700 mt-4">
             Lehigh University&apos;s Computer Science Capstone is a program of
             the Computer Science and Engineering Department. The capstone is a
@@ -44,9 +44,9 @@ export default function Home() {
             their education.
           </p>
       </div>
-      <div className="lg:h-[30rem] bg-[#cfab7a]"/>
+      <div className="lg:h-[20rem] bg-[#cfab7a]"/>
       <div className="pt-6 bg-[#cfab7a]">
-      <h1 className="text-center text-xl font-bold">PAST PROJECTS</h1>
+      <h1 className="text-center text-xl font-bold">Meet the Faculty!</h1>
         <div className="py-4 flex justify-center relative w-full">
           <ImageCarousel />
         </div>
